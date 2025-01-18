@@ -71,7 +71,11 @@ const Vision = () => {
                     alt="Our Vision"
                     className="vision-image"
                 /> */}
-                <video src={visionVid} className="vision-image" autoPlay muted loop></video>
+                {/* <video src={visionVid} className="vision-image" autoPlay muted loop></video> */}
+                <video preload="metadata" className="vision-image" autoPlay muted loop width="100%">
+                    <source src={visionVid} type="video/mp4" />
+                    Your browser does not support the video tag.
+                </video>
             </div>
         </section>
     );
