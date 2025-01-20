@@ -127,7 +127,7 @@ body {
 
 .sidebar-header i {
   font-size: 2.5rem;
-  color: #f7b810;
+  color: crimson;
   cursor: pointer;
   transition: transform 0.3s ease;
 }
