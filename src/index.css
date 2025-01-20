@@ -127,7 +127,7 @@ body {
 
 .sidebar-header i {
   font-size: 2.5rem;
-  color: crimson;
+  color: #431d45;
   cursor: pointer;
   transition: transform 0.3s ease;
 }
@@ -184,7 +184,7 @@ body {
   }
 
   .nav-links i {
-    color: crimson;
+    color: #431d45;
     display: block;
   }
 }
