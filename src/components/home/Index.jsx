@@ -6,6 +6,7 @@ import WhyChooseUs from './WhyChooseUs'
 import Achievements from './Achievements'
 import Faculty from './Faculty'
 import Testimonial from './Testimonial'
+import CoursesPage from '../courses/Index'
 
 const Index = () => {
     return (
@@ -17,6 +18,7 @@ const Index = () => {
             <Achievements />
             <Faculty />
             <Testimonial />
+            {/* <CoursesPage /> */}
         </div>
     )
 }
