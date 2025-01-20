@@ -184,6 +184,7 @@ body {
   }
 
   .nav-links i {
+    color: crimson;
     display: block;
   }
 }
