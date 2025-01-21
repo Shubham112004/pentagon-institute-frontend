@@ -2,7 +2,8 @@ import React, { useEffect, useRef } from "react";
 import { gsap } from "gsap";
 import { ScrollTrigger } from "gsap/ScrollTrigger";
 import vision from '../../assets/vision.jpg'
-import visionVid from '../../assets/visionVid.mp4'
+// import visionVid from '../../assets/visionVid.mp4'
+import visionVid from '../../assets/visionVidCompressed.mp4'
 
 gsap.registerPlugin(ScrollTrigger);
 
