@@ -1,6 +1,7 @@
 import React, { useEffect, useRef } from "react";
 import { gsap } from "gsap";
 import { ScrollTrigger } from "gsap/ScrollTrigger";
+import { NavLink } from "react-router-dom";
 
 gsap.registerPlugin(ScrollTrigger);
 
@@ -48,7 +49,7 @@ const CoursesGrid = () => {
                         <div className="card-content">
                             <h3 className="course-title">{course.title}</h3>
                             <p className="course-description">{course.description}</p>
-                            <button className="learn-more">Learn More</button>
+                            <NavLink to="/courses"><button className="learn-more">Learn More</button></NavLink>
                         </div>
                     </div>
                 ))}

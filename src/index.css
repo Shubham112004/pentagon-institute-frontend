@@ -790,7 +790,7 @@ body {
   margin: 0 auto;
   border: 1px solid #ddd;
   border-radius: 8px;
-  padding: 20px;
+  padding: 35px;
   background-color: #fff;
   box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1);
 }
@@ -808,6 +808,13 @@ body {
 .testimonial {
   max-width: 80%;
   text-align: center;
+}
+
+.testimonial img {
+  width: 5vw;
+  height: 11vh;
+  border-radius: 50%;
+  object-fit: cover;
 }
 
 .testimonial-message {
@@ -872,6 +879,13 @@ body {
   .testimonial-carousel-content {
     height: auto;
     padding: 20px 10px;
+  }
+
+  .testimonial img {
+    width: 18vw;
+    height: 10vh;
+    border-radius: 50%;
+    object-fit: cover;
   }
 
   .testimonial-message {
@@ -1334,5 +1348,177 @@ body {
 @media (min-width: 1200px) {
   .feature-item {
     flex: 1 1 calc(25% - 30px);
+  }
+}
+
+/* Admissions Section */
+.admissions-section {
+  padding: 30px 20px;
+  /* background-color: #f9f9f9; */
+  font-family: "Roboto", sans-serif;
+  text-align: center;
+}
+
+.admissions-header h1 {
+  font-size: 2.5rem;
+  color: #333;
+}
+
+.admissions-header p {
+  font-size: 1.2rem;
+  margin-top: 10px;
+  color: #555;
+}
+
+/* Timeline Container */
+.admissions-timeline {
+  margin-top: 40px;
+  display: flex;
+  justify-content: center;
+}
+
+.step-container {
+  display: flex;
+  align-items: center;
+  gap: 20px;
+  flex-wrap: wrap;
+}
+
+/* Step Cards */
+.step-card {
+  background: #fff;
+  padding: 20px;
+  border-radius: 10px;
+  box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+  max-width: 200px;
+  text-align: center;
+  flex: 1;
+}
+
+.step-card h3 {
+  font-size: 1.2rem;
+  margin-bottom: 10px;
+  color: #333;
+}
+
+.step-card p {
+  font-size: 0.9rem;
+  color: #666;
+}
+
+.step-card {
+  transition: transform 0.3s, box-shadow 0.3s;
+}
+
+.step-card:hover {
+  transform: translateY(-10px);
+  box-shadow: 0 8px 20px rgba(0, 0, 0, 0.2);
+}
+
+
+/* Arrows */
+.arrow {
+  font-size: 2rem;
+  color: #f50515;
+  transform: scale(0);
+  /* Initial scale for animation */
+  transition: transform 0.3s;
+}
+
+/* Responsive Design */
+@media (max-width: 768px) {
+  .step-container {
+    flex-direction: column;
+  }
+
+  .arrow {
+    display: none;
+    /* Hide arrows on smaller screens */
+  }
+}
+
+/* FAQ Section */
+.faq-section {
+  margin: 0 35px;
+  border-radius: 20px;
+  padding: 50px 20px;
+  background-color: #f9f9f9;
+  text-align: center;
+}
+
+.faq-section h2 {
+  font-size: 2rem;
+  margin-bottom: 20px;
+  color: #333;
+}
+
+.faq-container {
+  max-width: 800px;
+  margin: 0 auto;
+  text-align: left;
+}
+
+.faq-item {
+  border: 1px solid #ddd;
+  border-radius: 5px;
+  margin-bottom: 10px;
+  overflow: hidden;
+  transition: all 0.3s ease-in-out;
+}
+
+.faq-item.open {
+  box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+}
+
+.faq-question {
+  background-color: #fff;
+  padding: 15px 20px;
+  cursor: pointer;
+  font-size: 1rem;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  color: #444;
+  font-weight: 500;
+}
+
+.faq-answer {
+  padding: 15px 20px;
+  background-color: #fafafa;
+  font-size: 0.9rem;
+  color: #555;
+}
+
+/* CTA Section */
+.cta-section {
+  margin-top: 40px;
+  text-align: center;
+}
+
+.cta-button {
+  background-color: #f50515;
+  color: #fff;
+  border: none;
+  border-radius: 5px;
+  padding: 15px 30px;
+  font-size: 1rem;
+  font-weight: bold;
+  cursor: pointer;
+  transition: background-color 0.3s ease-in-out;
+}
+
+.cta-button:hover {
+  background-color: #c20412;
+}
+
+/* Responsive Design */
+@media (max-width: 768px) {
+  .faq-container {
+    padding: 0 10px;
+  }
+
+  .cta-button {
+    width: 100%;
+    padding: 15px;
   }
 }
