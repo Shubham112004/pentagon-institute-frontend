@@ -1741,3 +1741,171 @@ body {
     margin-top: 15px;
   }
 }
+
+/* General Styling */
+.about-us {
+  font-family: 'Arial', sans-serif;
+  padding: 20px;
+  /* background: #f9f9f9; */
+  color: #333;
+  line-height: 1.6;
+}
+
+/* Section Styling */
+.section {
+  margin-bottom: 40px;
+  padding: 20px;
+  background: #fff;
+  border-radius: 8px;
+  box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1);
+  transition: transform 0.3s ease, box-shadow 0.3s ease;
+}
+
+.section:hover {
+  transform: translateY(-5px);
+  box-shadow: 0 6px 12px rgba(0, 0, 0, 0.15);
+}
+
+.section h2 {
+  margin-bottom: 15px;
+  color: #f9b80e;
+  font-weight: 600;
+}
+
+/* Introduction Section */
+.intro h1 {
+  font-size: 2.5rem;
+  color: #451f44;
+  font-weight: bold;
+  text-align: center;
+}
+
+.intro p {
+  font-size: 1.2rem;
+  text-align: center;
+}
+
+/* Why Choose Section */
+.why-choose ul {
+  list-style-type: disc;
+  padding-left: 20px;
+}
+
+.why-choose ul li {
+  margin-bottom: 10px;
+}
+
+/* Call to Action Section */
+.call-to-action {
+  text-align: center;
+}
+
+.call-to-action .cta-button {
+  /* background: #0073e6; */
+  background: linear-gradient(135deg, #f73ead, #f50515);
+  color: #fff;
+  padding: 10px 20px;
+  font-size: 1.2rem;
+  border: none;
+  border-radius: 5px;
+  cursor: pointer;
+  transition: background 0.3s ease;
+}
+
+.call-to-action .cta-button:hover {
+  /* background: #005bb5; */
+  background: linear-gradient(135deg, #f50515, #f73ead);
+}
+
+/* Responsive Styling */
+@media (max-width: 768px) {
+  .section {
+    padding: 15px;
+  }
+
+  .intro h1 {
+    font-size: 2rem;
+  }
+
+  .intro p {
+    font-size: 1rem;
+  }
+
+  .call-to-action .cta-button {
+    font-size: 1rem;
+    padding: 8px 16px;
+  }
+}
+
+
+/* General Styling */
+.contact-us {
+  font-family: 'Arial', sans-serif;
+  padding: 20px;
+  /* background: #f4f4f4; */
+  color: #333;
+  line-height: 1.6;
+}
+
+/* Section Styling */
+.section {
+  margin-bottom: 40px;
+  padding: 20px;
+  background: #fff;
+  border-radius: 8px;
+  box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1);
+  transition: transform 0.3s ease, box-shadow 0.3s ease;
+}
+
+.section:hover {
+  transform: translateY(-5px);
+  box-shadow: 0 6px 12px rgba(0, 0, 0, 0.15);
+}
+
+.section h2 {
+  margin-bottom: 15px;
+  color: #f9b80e;
+}
+
+.section ul {
+  list-style-type: none;
+  padding: 0;
+}
+
+.section ul li {
+  margin-bottom: 10px;
+}
+
+/* Contact Form Styling */
+.contact-form form {
+  display: flex;
+  flex-direction: column;
+}
+
+.form-group {
+  margin-bottom: 15px;
+}
+
+.form-group label {
+  margin-bottom: 5px;
+  display: block;
+  font-weight: bold;
+}
+
+
+.submit-button {
+  /* background: #0073e6; */
+  background: linear-gradient(135deg, #f73ead, #f50515);
+  color: #fff;
+  padding: 10px 20px;
+  font-size: 1.2rem;
+  border: none;
+  border-radius: 5px;
+  cursor: pointer;
+  transition: background 0.3s ease;
+}
+
+.submit-button :hover {
+  /* background: #005bb5; */
+  background: linear-gradient(135deg, #f50515, #f73ead);
+}
