@@ -7,6 +7,7 @@ const Admissions = () => {
     const [faqOpen, setFaqOpen] = useState(null); // For managing FAQ state
 
     useEffect(() => {
+        window.scrollTo(0, 0);
         const tl = gsap.timeline({ defaults: { duration: 0.6, ease: "power2.out" } });
 
         // Animate cards

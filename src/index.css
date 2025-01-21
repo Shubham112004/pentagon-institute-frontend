@@ -200,11 +200,9 @@ body {
 }
 
 .active-link {
-  /* background-color: red; */
   color: #fff !important;
   font-weight: bold;
 }
-
 
 .carousel-container {
   display: flex;
@@ -1520,5 +1518,96 @@ body {
   .cta-button {
     width: 100%;
     padding: 15px;
+  }
+}
+
+.achievements-section {
+  text-align: center;
+  padding: 2rem 1rem;
+  position: relative;
+  /* To contain absolute positioning of images */
+}
+
+.achievements-section p {
+  text-align: center;
+  margin-top: 30px;
+  font-size: 1.2rem;
+}
+
+.achievements-section h2 {
+  font-size: 2rem;
+  margin-bottom: 1.5rem;
+  font-family: Arial, sans-serif;
+}
+
+.images-container {
+  display: grid;
+  grid-template-columns: repeat(auto-fill, minmax(500px, 1fr));
+  /* Flexibly fill with images */
+  grid-gap: 15px;
+  /* Space between images */
+  justify-items: center;
+  /* Center each item in grid cell */
+  position: relative;
+  max-width: 90%;
+  margin: 0 auto;
+  /* Center container */
+  overflow: hidden;
+}
+
+.achievement-image {
+  width: 450px;
+  height: 200px;
+  border: 10px ridge white;
+  object-fit: cover;
+  border-radius: 8px;
+  transition: transform 0.3s ease-in-out;
+  box-shadow: 0 4px 10px rgba(0, 0, 0, 0.1);
+  /* Soft shadow for a 3D effect */
+  transition: box-shadow 0.3s ease-in-out;
+}
+
+.achievement-image:hover {
+  transform: scale(1.1);
+  box-shadow: 0 8px 20px rgba(0, 0, 0, 0.2);
+  /* Shadow on hover */
+}
+
+@media (max-width: 768px) {
+  .achievement-image {
+    border: 10px ridge white;
+    width: 300px;
+    height: 140px;
+  }
+
+  .achievements-section h2 {
+    font-size: 1.5rem;
+  }
+
+  .images-container {
+    width: 90%;
+  }
+}
+
+@media (max-width: 480px) {
+  .achievement-image {
+    border: 7px ridge white;
+    width: 300px;
+    height: 100px;
+    margin-bottom: 20px;
+  }
+
+  .achievements-section p {
+    text-align: justify;
+    font-size: 1rem;
+  }
+
+  .achievements-section h2 {
+    font-size: 1.2rem;
+  }
+
+  .images-container {
+    display: contents;
+    width: 90%;
   }
 }

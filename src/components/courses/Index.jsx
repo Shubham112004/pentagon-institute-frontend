@@ -54,6 +54,7 @@ const CoursesPage = () => {
     const [selectedCourse, setSelectedCourse] = useState(null);
 
     useEffect(() => {
+        window.scrollTo(0, 0);
         // GSAP animation for cards
         gsap.fromTo(
             ".course-page-card",
