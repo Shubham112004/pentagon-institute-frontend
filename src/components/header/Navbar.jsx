@@ -25,6 +25,7 @@ const Navbar = () => {
                     <h4><NavLink to="/faculty" className={({ isActive }) => isActive ? 'active-link' : ''}>Faculty</NavLink></h4>
                     <h4><NavLink to="/about-us" className={({ isActive }) => isActive ? 'active-link' : ''}>About Us</NavLink></h4>
                     <h4><NavLink to="/contact-us" className={({ isActive }) => isActive ? 'active-link' : ''}>Contact Us</NavLink></h4>
+                    <h4><NavLink to="/login" className={({ isActive }) => isActive ? 'active-link' : ''} style={{ color: 'crimson' }}>Login <span className='fa fa-user'></span></NavLink></h4>
                     <i className={`ri-pentagon-line ${isSidebarOpen ? 'open' : ''}`} onClick={toggleSidebar}></i>
                 </div>
             </nav>
@@ -42,6 +43,7 @@ const Navbar = () => {
                     <h4><NavLink to="/faculty" className={({ isActive }) => isActive ? 'active-link' : ''} onClick={closeSidebar}>Faculty</NavLink></h4>
                     <h4><NavLink to="/about-us" className={({ isActive }) => isActive ? 'active-link' : ''} onClick={closeSidebar}>About Us</NavLink></h4>
                     <h4><NavLink to="/contact-us" className={({ isActive }) => isActive ? 'active-link' : ''} onClick={closeSidebar}>Contact Us</NavLink></h4>
+                    <h4><NavLink to="/login" className={({ isActive }) => isActive ? 'active-link' : ''} style={{ color: 'crimson' }}>Login <span className='fa fa-user'></span></NavLink></h4>
                 </div>
             </div>
         </main>

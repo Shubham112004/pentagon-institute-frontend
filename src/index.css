@@ -1909,3 +1909,75 @@ body {
   /* background: #005bb5; */
   background: linear-gradient(135deg, #f50515, #f73ead);
 }
+
+.row {
+  margin: 0px !important;
+}
+
+.login-bg {
+  width: 100%;
+  height: 100vh;
+  /* Use viewport height to ensure it fills the screen */
+  background: url('./assets/login-bg.png') no-repeat center center;
+  /* Ensures proper alignment */
+  background-size: cover;
+  /* Ensures the image covers the entire area */
+}
+
+.login-left-side img {
+  width: 8vw;
+  height: 15vh;
+}
+
+.login-left-side h2 {
+  margin-top: 30px;
+  font-size: 3rem;
+  font-weight: 800;
+}
+
+.login-right-side form {
+  padding: 80px 30px;
+  background-color: #e0e3cd;
+  border-radius: 15px;
+}
+
+.login-right-side form {
+  width: 75%;
+}
+
+.login-right-side button {
+  margin: 20px 0px;
+  width: 100%;
+  background: linear-gradient(135deg, #f73ead, #f50515);
+  color: #fff;
+}
+
+.login-right-side button:hover {
+  background: linear-gradient(135deg, #f50515, #f73ead);
+  color: #fff;
+}
+
+.login-right-side a {
+  /* color: #1a1a1a; */
+  text-decoration: none;
+}
+
+@media (max-width: 768px) {
+  .login-left-side img {
+    width: 18vw;
+    height: 12vh;
+  }
+
+  .login-left-side h2 {
+    font-size: 2rem;
+  }
+
+  .login-right-side form {
+    padding: 80px 20px;
+    border-radius: 15px;
+  }
+
+  .login-right-side form {
+    width: 90%;
+  }
+}
